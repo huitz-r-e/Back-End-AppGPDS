@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('sexo');
             $table->string('NUP');
             $table->string('NUE');
-            $table->foreign('NUE')->references('NUE')->on('usuarios');
+            $table->foreign('NUE')->references('NUE')->on('users');
             $table->string('RFC');
             $table->string('NSS');
             $table->date('f_nacimiento');

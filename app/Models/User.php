@@ -18,10 +18,12 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'nombre',
+        'NUE',
         'password',
+        'id_rol',
     ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -42,4 +44,18 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function rol(){
+        return $this->belogsTo(rol::class);
+    }
+
+    public function solicitud(){
+        return $this->hasMany(solicitud::class);
+    }
+    
+    public function agremiado(){
+        return $this->hasOne(agremiado::class);
+    }
+
+
 }

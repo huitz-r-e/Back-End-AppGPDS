@@ -17,7 +17,7 @@ class solicitud extends Model
     ];
 
     public function Usuario(){
-        return $this->belogsTo(Usuario::class);
+        return $this->belogsTo(User::class);
     }
 
 

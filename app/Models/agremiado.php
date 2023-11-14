@@ -24,7 +24,7 @@ class agremiado extends Model
         
     ];
     public function usuario(){
-        return $this->belogsTo(usuario::class);
+        return $this->belogsTo(User::class);
     }
 
 

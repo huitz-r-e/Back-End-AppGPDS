@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('solicitudes', function (Blueprint $table) {
             $table->id();
             $table->string('NUE');
-            $table->foreign('NUE')->references('NUE')->on('usuarios');
+            $table->foreign('NUE')->references('NUE')->on('users');
             $table->string('ruta_archivo');
             $table->date('fecha');
             $table->timestamps();

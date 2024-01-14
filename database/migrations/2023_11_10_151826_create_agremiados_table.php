@@ -19,12 +19,12 @@ return new class extends Migration
             $table->string('sexo');
             $table->string('NUP');
             $table->string('NUE');
-            $table->foreign('NUE')->references('NUE')->on('users');
+            // $table->foreign('NUE')->references('NUE')->on('users');
             $table->string('RFC');
             $table->string('NSS');
             $table->date('f_nacimiento');
             $table->string('telefono');
-            $table->float('cuota');
+            $table->boolean('cuota');
             $table->timestamps();
         });
     }

@@ -53,9 +53,9 @@ class User extends Authenticatable
         return $this->hasMany(solicitud::class);
     }
     
-    public function agremiado(){
-        return $this->hasOne(agremiado::class);
-    }
+    // public function agremiado(){
+    //     return $this->hasOne(agremiado::class);
+    // }
 
 
 }

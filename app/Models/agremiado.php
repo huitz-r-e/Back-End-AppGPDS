@@ -23,9 +23,9 @@ class agremiado extends Model
         'cuota'
         
     ];
-    public function usuario(){
-        return $this->belogsTo(User::class);
-    }
+    // public function usuario(){
+    //     return $this->belogsTo(User::class);
+    // }
 
 
 }
